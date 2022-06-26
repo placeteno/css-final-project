@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Lato:wght@300;400;700&family=Merriweather+Sans:wght@400;500;700;800&family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mediaq.css" />
 
@@ -19,7 +20,7 @@
   <body>
     <header class="main-header">
       <div class="header-nav">
-        <a href="/" class="main-logo">
+        <a href="#" class="main-logo">
           <img
             class="main-logo-icon"
             src="/content/img/logos/logo-icon.png"
@@ -111,12 +112,13 @@
 
       <section id="howitworks" class="how-section">
         <div class="container">
-          <p class="how-section--heading">How it works</p>
-          <h2 class="how-section--title">
+          <p class="section--heading">How it works</p>
+          <h2 class="section--title">
             Your daily dose of health in 3 simple steps
           </h2>
         </div>
         <div class="container grid grid--2-cols grid--center">
+          <!-- STEP 1 -->
           <div class="step-text-box">
             <span class="step-number">01</span>
             <h3 class="step-title">Tell us what you like (and what not)</h3>
@@ -131,14 +133,16 @@
             <img
               class="step-img"
               src="/content/img/app/app-screen-1.png"
-              alt=""
+              alt="iPhone app preference selection screen"
             />
           </div>
+          <!-- STEP 2 -->
+
           <div class="step-img-box">
             <img
               class="step-img"
               src="/content/img/app/app-screen-2.png"
-              alt=""
+              alt="iPhone app meal plan screen"
             />
           </div>
           <div class="step-text-box">
@@ -150,6 +154,8 @@
               your own recipes.
             </p>
           </div>
+          <!-- STEP 3 -->
+
           <div class="step-text-box">
             <span class="step-number">03</span>
             <h3 class="step-title">Receive meals at convenient time</h3>
@@ -163,13 +169,270 @@
             <img
               class="step-img"
               src="/content/img/app/app-screen-3.png"
-              alt=""
+              alt="iPhone app delivery screen"
             />
           </div>
+        </div>
+      </section>
+
+      <section class="meals-section" id="meals">
+        <div class="container">
+          <p class="section--heading">Meals</p>
+          <h2 class="section--title">
+            Our AI chooses from over 5,000 recipes to create the perfect menu
+            for you
+          </h2>
+        </div>
+        <div class="meals container grid grid--3-cols">
+          <div class="meal-card">
+            <img
+              class="meal-photo"
+              src="/content/img/meals/meal-1.jpg"
+              alt="3 plates on a table with Japanese food"
+            />
+            <div class="meal--description">
+              <span class="meal-diet-type">Vegetarian</span>
+              <h3 class="meal-title">Japanese Gyozas</h3>
+              <ul class="meal-features">
+                <li>
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                  <span><strong>650</strong> calories</span>
+                </li>
+                <li>
+                  <ion-icon
+                    class="meal-icon"
+                    name="restaurant-outline"
+                  ></ion-icon>
+                  <span>NutriScore &reg; <strong>74</strong></span>
+                </li>
+                <li>
+                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                  <span><strong>4.9</strong> rating (537)</span>
+                </li>
+              </ul>
+              <img
+                class="card-logo"
+                src="/content/img/logos/logo-icon.png"
+                alt="Main logo"
+              />
+            </div>
+            <div class="card-btn-box">
+              <a href="#" class="card-btn-link">Add to menu</a>
+            </div>
+          </div>
+          <div class="meal-card">
+            <img
+              class="meal-photo"
+              src="/content/img/meals/meal-2.jpg"
+              alt="Bowl of salad"
+            />
+            <div class="meal--description">
+              <span class="meal-diet-type diet-type-2">Vegan</span>
+              <h3 class="meal-title">Avocado Salad</h3>
+              <ul class="meal-features">
+                <li>
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                  <span><strong>400</strong> calories</span>
+                </li>
+                <li>
+                  <ion-icon
+                    class="meal-icon"
+                    name="restaurant-outline"
+                  ></ion-icon>
+                  <span>NutriScore &reg; <strong>92</strong></span>
+                </li>
+                <li>
+                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                  <span><strong>4.8</strong> rating (441)</span>
+                </li>
+              </ul>
+              <img
+                class="card-logo"
+                src="/content/img/logos/logo-icon.png"
+                alt="Main logo"
+              />
+            </div>
+            <div class="card-btn-box">
+              <a href="#" class="card-btn-link">Add to menu</a>
+            </div>
+          </div>
+          <div class="meal-types">
+            <h3 class="meal-types--heading">Works with any diet</h3>
+            <ul class="meal-types--items">
+              <li class="meal-types--item">
+                <ion-icon name="checkmark-outline" class="meal-icon"></ion-icon
+                >Vegetarian
+              </li>
+              <li class="meal-types--item">
+                <ion-icon name="checkmark-outline" class="meal-icon"></ion-icon
+                >Vegan
+              </li>
+              <li class="meal-types--item">
+                <ion-icon name="checkmark-outline" class="meal-icon"></ion-icon
+                >Pescatarian
+              </li>
+              <li class="meal-types--item">
+                <ion-icon name="checkmark-outline" class="meal-icon"></ion-icon
+                >Gluten-free
+              </li>
+              <li class="meal-types--item">
+                <ion-icon name="checkmark-outline" class="meal-icon"></ion-icon
+                >Lactose-free
+              </li>
+              <li class="meal-types--item">
+                <ion-icon name="checkmark-outline" class="meal-icon"></ion-icon
+                >Keto
+              </li>
+              <li class="meal-types--item">
+                <ion-icon name="checkmark-outline" class="meal-icon"></ion-icon
+                >Paleo
+              </li>
+              <li class="meal-types--item">
+                <ion-icon name="checkmark-outline" class="meal-icon"></ion-icon
+                >Low FODMAP
+              </li>
+              <li class="meal-types--item">
+                <ion-icon name="checkmark-outline" class="meal-icon"></ion-icon
+                >Kid-friendly
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="all-recipes">Browse more recipes →</a>
+      </section>
+
+      <section class="testimonials-section" id="testiomonials">
+        <div class="testimonials-container">
+          <p class="section--heading">Testimonials</p>
+          <h2 class="section--title">
+            Once you try it our meals, you can't go back!
+          </h2>
+          <div class="testimonials grid grid--2-cols">
+            <div class="testimonial">
+              <img
+                src="/content/img/customers/ben.jpg"
+                alt=""
+                class="testimonial photo"
+              />
+              <p class="testimonial-text">
+                The AI algorithm is crazy good, it chooses the right meals for
+                me every time. It's amazing not to worry about food anymore!
+              </p>
+              <span class="testimonial-author">- Ben Hadley</span>
+            </div>
+            <div class="testimonial">
+              <img
+                src="/content/img/customers/hannah.jpg"
+                alt=""
+                class="testimonial photo"
+              />
+              <p class="testimonial-text">
+                I got Green Chickpea for the whole family, and it frees up so
+                much time! Plus, everything is organic and vegan and without
+                plastic.
+              </p>
+              <span class="testimonial-author">- Hannah Smith</span>
+            </div>
+            <div class="testimonial">
+              <img
+                src="/content/img/customers/steve.jpg"
+                alt=""
+                class="testimonial photo"
+              />
+              <p class="testimonial-text">
+                Green Chickpea is a life saver! I just started a company, so
+                there's no time for cooking. I couldn't live without my daily
+                meals now!
+              </p>
+              <span class="testimonial-author">- Steve Miller</span>
+            </div>
+            <div class="testimonial">
+              <img
+                src="/content/img/customers/dave.jpg"
+                alt=""
+                class="testimonial photo"
+              />
+              <p class="testimonial-text">
+                Inexpensive, healthy and great-tasting meals, without even
+                having to order manually! It feels truly magical.
+              </p>
+              <span class="testimonial-author">- Dave Bryson</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery grid grid--3-cols">
+          <img
+            class="gallery-photo"
+            src="/content/img/gallery/gallery-1.jpg"
+            alt=""
+          />
+          <img
+            class="gallery-photo"
+            src="/content/img/gallery/gallery-2.jpg"
+            alt=""
+          />
+          <img
+            class="gallery-photo"
+            src="/content/img/gallery/gallery-3.jpg"
+            alt=""
+          />
+          <img
+            class="gallery-photo"
+            src="/content/img/gallery/gallery-4.jpg"
+            alt=""
+          />
+          <img
+            class="gallery-photo"
+            src="/content/img/gallery/gallery-5.jpg"
+            alt=""
+          />
+          <img
+            class="gallery-photo"
+            src="/content/img/gallery/gallery-6.jpg"
+            alt=""
+          />
+          <img
+            class="gallery-photo"
+            src="/content/img/gallery/gallery-7.jpg"
+            alt=""
+          />
+          <img
+            class="gallery-photo"
+            src="/content/img/gallery/gallery-8.jpg"
+            alt=""
+          />
+          <img
+            class="gallery-photo"
+            src="/content/img/gallery/gallery-9.jpg"
+            alt=""
+          />
+          <img
+            class="gallery-photo"
+            src="/content/img/gallery/gallery-10.jpg"
+            alt=""
+          />
+          <img
+            class="gallery-photo"
+            src="/content/img/gallery/gallery-12.jpg"
+            alt=""
+          />
+          <img
+            class="gallery-photo"
+            src="/content/img/gallery/gallery-12.jpg"
+            alt=""
+          />
         </div>
       </section>
     </main>
 
     <footer class="footer"></footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

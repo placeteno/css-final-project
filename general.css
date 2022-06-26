@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Aloevera";
+  src: url(/content/fonts/aloevera-font/Aloevera.ttf);
+}
+
+:root {
+  --primary: #16a63c;
+  --primary-dark: #094218;
+  --primary-light: #e8f6ec;
+
+  --gray-very-light: #888;
+  --gray-light: #555;
+  --gray-dark: #333;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
+  color: var(--gray-dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center {
+  align-items: center;
+}
+
+.margin-right-sm {
+  margin-right: 1rem !important;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 30px rgba(60, 60, 60, 0.2);
+
+  transition: all .2s;
+}
+
+.btn--main:link,
+.btn--main:visited {
+  color: white;
+  background-color: var(--primary);
+}
+
+.btn--main:hover,
+.btn--main:active {
+  background-color: #149536;
+  color: white;
+}
+
+.btn--alt:link,
+.btn--alt:visited {
+  background-color: white;
+  color: #094218;
+}
+
+.btn--alt:hover,
+.btn--alt:active {
+  background-color: rgb(250, 250, 250);
+}
+
+.section--heading {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+  color: var(--primary)
+}
+
+.section--title {
+  font-size: 4.4rem;
+  font-weight: 800;
+  margin-bottom: 9.6rem;
+  font-family: 'Merriweather Sans', sans-serif;
+}
