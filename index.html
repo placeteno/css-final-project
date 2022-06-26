@@ -4,7 +4,172 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>
+    <link rel="icon" href="/content/img/logos/logo-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Lato:wght@300;400;700&family=Merriweather+Sans:wght@400;500;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaq.css" />
+
+    <title>Green Chickpea | Healthy meal plans</title>
   </head>
-  <body></body>
+  <body>
+    <header class="main-header">
+      <div class="header-nav">
+        <a href="/" class="main-logo">
+          <img
+            class="main-logo-icon"
+            src="/content/img/logos/logo-icon.png"
+            alt="Main logo"
+          />
+          <h1 class="logo-title">Green <br />Chickpea</h1>
+        </a>
+        <nav class="main-nav">
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a href="#howitworks" class="nav-item-link">How it works</a>
+            </li>
+            <li class="nav-item">
+              <a href="#meals" class="nav-item-link">Meals</a>
+            </li>
+            <li class="nav-item">
+              <a href="#pricing" class="nav-item-link">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#faqs" class="nav-item-link">FAQs</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-login">
+        <ul class="login-items">
+          <li class="login-item">
+            <a href="#" class="login-btn">Sign Up</a>
+          </li>
+          <li class="login-item">
+            <a href="" class="login-btn login-btn-alt">Log in</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main>
+      <section class="hero-section">
+        <div class="hero">
+          <div class="hero-img-box">
+            <img
+              class="hero-img"
+              src="/content/img/hero2.jpg"
+              alt="Different meals displayed on a table"
+            />
+          </div>
+          <div class="hero-text-box">
+            <h1 class="hero-title">
+              A healthy meal for every day of the week. No
+              <span class="title-span">stress</span>, all <em>taste</em>.
+            </h1>
+            <p class="hero-description">
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs. We have delivered 250,000+ meals last year!
+            </p>
+            <a href="#" class="btn btn--main margin-right-sm"
+              >Start eating well</a
+            >
+            <a href="#" class="btn btn--alt">Learn more</a>
+          </div>
+        </div>
+      </section>
+      <section class="featured-section">
+        <div class="container">
+          <h2 class="featured-title">As featured in</h2>
+          <div class="logos">
+            <img
+              src="/content/img/logos/business-insider.png"
+              alt="Business Insider logo"
+            />
+            <img
+              src="/content/img/logos/forbes.png"
+              alt="Forbes Magazine logo"
+            />
+            <img
+              src="/content/img/logos/techcrunch.png"
+              alt="TechCrunch logo"
+            />
+            <img
+              src="/content/img/logos/the-new-york-times.png"
+              alt="The New York Times logo"
+            />
+            <img src="/content/img/logos/usa-today.png" alt="USA Today logo" />
+          </div>
+        </div>
+      </section>
+
+      <section id="howitworks" class="how-section">
+        <div class="container">
+          <p class="how-section--heading">How it works</p>
+          <h2 class="how-section--title">
+            Your daily dose of health in 3 simple steps
+          </h2>
+        </div>
+        <div class="container grid grid--2-cols grid--center">
+          <div class="step-text-box">
+            <span class="step-number">01</span>
+            <h3 class="step-title">Tell us what you like (and what not)</h3>
+            <p class="step-description">
+              Never again waste time thinking about what to eat! Omnifood AI
+              will create a 100% personalized weekly meal plan just for you. It
+              makes sure you get all the nutrients and vitamins you need, no
+              matter what diet you follow!
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              class="step-img"
+              src="/content/img/app/app-screen-1.png"
+              alt=""
+            />
+          </div>
+          <div class="step-img-box">
+            <img
+              class="step-img"
+              src="/content/img/app/app-screen-2.png"
+              alt=""
+            />
+          </div>
+          <div class="step-text-box">
+            <span class="step-number">02</span>
+            <h3 class="step-title">Approve your weekly meal plan</h3>
+            <p class="step-description">
+              Once per week, approve the meal plan generated for you by Omnifood
+              AI. You can change ingredients, swap entire meals, or even add
+              your own recipes.
+            </p>
+          </div>
+          <div class="step-text-box">
+            <span class="step-number">03</span>
+            <h3 class="step-title">Receive meals at convenient time</h3>
+            <p class="step-description">
+              Best chefs in town will cook your selected meal every day, and we
+              will deliver it to your door whenever works best for you. You can
+              change delivery schedule and address daily!
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              class="step-img"
+              src="/content/img/app/app-screen-3.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+  </body>
 </html>

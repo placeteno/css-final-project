@@ -1,0 +1,386 @@
+@font-face {
+  font-family: "Aloevera";
+  src: url(/content/fonts/aloevera-font/Aloevera.ttf);
+}
+
+:root {
+  --primary: #16a63c;
+  --primary-dark: #094218;
+  --primary-light: #e8f6ec;
+
+  --gray-very-light: #888;
+  --gray-light: #555;
+  --gray-dark: #333;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
+  color: var(--gray-dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center {
+  align-items: center;
+}
+
+.margin-right-sm {
+  margin-right: 1rem !important;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 30px rgba(60, 60, 60, 0.2);
+
+  transition: all .2s;
+}
+
+.btn--main:link,
+.btn--main:visited {
+  color: white;
+  background-color: var(--primary);
+}
+
+.btn--main:hover,
+.btn--main:active {
+  background-color: #149536;
+  color: white;
+}
+
+.btn--alt:link,
+.btn--alt:visited {
+  background-color: white;
+  color: #094218;
+}
+
+.btn--alt:hover,
+.btn--alt:active {
+  background-color: rgb(250, 250, 250);
+}
+
+/* =============
+--- HEADER SECTION
+================ */
+
+.main-header {
+  height: 8.7rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  box-shadow: 0 -10px 30px rgba(86, 86, 86, 0.2);
+
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.main-logo {
+  text-decoration: none;
+  color: black;
+  font-family: "Aloevera", serif;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.main-logo-icon {
+  width: 5.6rem;
+  height: 5.6rem;
+}
+
+.logo-title {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 0.9;
+  padding-top: 10px;
+}
+
+/* =============
+--- NAVIGATION
+================ */
+
+.main-nav {
+  font-size: 1.6rem;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-item-link:link,
+.nav-item-link:visited {
+  color: var(--gray-light);
+  font-size: 1.7rem;
+  transition: all .2s;
+}
+
+.nav-item-link:hover,
+.nav-item-link:active {
+  color: rgb(168, 168, 168);
+}
+
+.login-items {
+  list-style: none;
+  font-size: 1.6rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.login-btn:link,
+.login-btn:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  border: 1px solid #16a63c;
+  color: white;
+  background-color: var(--primary);
+  transition: all .2s;
+}
+
+.login-btn:hover,
+.login-btn:active {
+  background-color: #149536;
+  color: white;
+}
+
+.login-btn-alt:link,
+.login-btn-alt:visited {
+  background-color: white;
+  color: #094218;
+}
+
+.login-btn-alt:hover,
+.login-btn-alt:active {
+  background-color: #e8f6ec;
+}
+
+/* =============
+--- HERO SECTION
+================ */
+
+.hero-section {
+  background-color: var(--primary-light);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 6rem;
+  padding: 9.6rem 0;
+}
+
+.hero-text-box {
+  padding-right: 10rem;
+
+}
+
+.hero-title {
+  font-size: 4.6rem;
+  font-family: 'Merriweather Sans';
+  line-height: 1;
+  margin-bottom: 3.2rem;
+  color: var(--primary-dark);
+}
+
+.title-span {
+  position: relative;
+}
+
+.title-span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: .6rem;
+  width: 100%;
+  background-color: var(--primary);
+}
+
+em {
+  position: relative;
+}
+
+em::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: .6rem;
+  width: 100%;
+  background-color: var(--primary);
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-description {
+  margin-bottom: 3.6rem;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+
+/* =============
+--- FEATURED IN SECTION
+================ */
+
+.featured-section {
+  padding: 4.2rem 0 3.2rem 0;
+}
+
+.featured-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--gray-very-light);
+  letter-spacing: .75px;
+  margin-bottom: 3.2rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/* =============
+--- HOW IT WORKS SECTION
+================ */
+
+.how-section {
+  padding: 9.6rem 0;
+}
+
+.how-section--heading {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+  color: var(--primary)
+}
+
+.how-section--title {
+  font-size: 4.4rem;
+  font-weight: 800;
+  margin-bottom: 9.6rem;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.step-number {
+  font-family: 'Aloevera', sans-serif;
+  font-size: 8.5rem;
+  font-weight: bold;
+  color: #bbb;
+}
+
+.step-title {
+  font-size: 3rem;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 800;
+  margin-bottom: 3.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-img-box {
+  position: relative;
+  text-align: center;
+  z-index: 11;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.step-img-box::before {
+  background-color: var(--primary-light);
+  height: 60%;
+  width: 60%;
+  z-index: -2;
+  padding-bottom: 60%;
+}
+
+.step-img-box::after {
+  background-color: #d0edd8;
+  height: 45%;
+  width: 45%;
+  z-index: -1;
+  padding-bottom: 45%;
+}
+
+.step-img {
+  width: 35%;
+}
+
+/* =============
+--- MEALS SECTION
+================ */
