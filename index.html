@@ -305,14 +305,14 @@
         <div class="testimonials-container">
           <p class="section--heading">Testimonials</p>
           <h2 class="section--title">
-            Once you try it our meals, you can't go back!
+            Once you try our meals, you can't go back!
           </h2>
           <div class="testimonials grid grid--2-cols">
             <div class="testimonial">
               <img
                 src="/content/img/customers/ben.jpg"
                 alt=""
-                class="testimonial photo"
+                class="testimonial-photo"
               />
               <p class="testimonial-text">
                 The AI algorithm is crazy good, it chooses the right meals for
@@ -324,7 +324,7 @@
               <img
                 src="/content/img/customers/hannah.jpg"
                 alt=""
-                class="testimonial photo"
+                class="testimonial-photo"
               />
               <p class="testimonial-text">
                 I got Green Chickpea for the whole family, and it frees up so
@@ -337,7 +337,7 @@
               <img
                 src="/content/img/customers/steve.jpg"
                 alt=""
-                class="testimonial photo"
+                class="testimonial-photo"
               />
               <p class="testimonial-text">
                 Green Chickpea is a life saver! I just started a company, so
@@ -350,7 +350,7 @@
               <img
                 src="/content/img/customers/dave.jpg"
                 alt=""
-                class="testimonial photo"
+                class="testimonial-photo"
               />
               <p class="testimonial-text">
                 Inexpensive, healthy and great-tasting meals, without even
@@ -360,67 +360,230 @@
             </div>
           </div>
         </div>
-        <div class="gallery grid grid--3-cols">
-          <img
-            class="gallery-photo"
-            src="/content/img/gallery/gallery-1.jpg"
-            alt=""
-          />
-          <img
-            class="gallery-photo"
-            src="/content/img/gallery/gallery-2.jpg"
-            alt=""
-          />
-          <img
-            class="gallery-photo"
-            src="/content/img/gallery/gallery-3.jpg"
-            alt=""
-          />
-          <img
-            class="gallery-photo"
-            src="/content/img/gallery/gallery-4.jpg"
-            alt=""
-          />
-          <img
-            class="gallery-photo"
-            src="/content/img/gallery/gallery-5.jpg"
-            alt=""
-          />
-          <img
-            class="gallery-photo"
-            src="/content/img/gallery/gallery-6.jpg"
-            alt=""
-          />
-          <img
-            class="gallery-photo"
-            src="/content/img/gallery/gallery-7.jpg"
-            alt=""
-          />
-          <img
-            class="gallery-photo"
-            src="/content/img/gallery/gallery-8.jpg"
-            alt=""
-          />
-          <img
-            class="gallery-photo"
-            src="/content/img/gallery/gallery-9.jpg"
-            alt=""
-          />
-          <img
-            class="gallery-photo"
-            src="/content/img/gallery/gallery-10.jpg"
-            alt=""
-          />
-          <img
-            class="gallery-photo"
-            src="/content/img/gallery/gallery-12.jpg"
-            alt=""
-          />
-          <img
-            class="gallery-photo"
-            src="/content/img/gallery/gallery-12.jpg"
-            alt=""
-          />
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img
+              class="gallery-photo"
+              src="/content/img/gallery/gallery-1.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              class="gallery-photo"
+              src="/content/img/gallery/gallery-2.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              class="gallery-photo"
+              src="/content/img/gallery/gallery-3.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              class="gallery-photo"
+              src="/content/img/gallery/gallery-4.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              class="gallery-photo"
+              src="/content/img/gallery/gallery-5.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              class="gallery-photo"
+              src="/content/img/gallery/gallery-6.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              class="gallery-photo"
+              src="/content/img/gallery/gallery-7.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              class="gallery-photo"
+              src="/content/img/gallery/gallery-8.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              class="gallery-photo"
+              src="/content/img/gallery/gallery-9.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              class="gallery-photo"
+              src="/content/img/gallery/gallery-10.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              class="gallery-photo"
+              src="/content/img/gallery/gallery-11.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              class="gallery-photo"
+              src="/content/img/gallery/gallery-12.jpg"
+              alt=""
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="pricing-section" id="pricing">
+        <div class="container">
+          <p class="section--heading">Pricing</p>
+          <h2 class="section--title">Eat well without breaking the bank</h2>
+        </div>
+        <div class="package-cards container grid grid--2-cols">
+          <!-- CARD 1 -->
+          <div class="package-card package-starter">
+            <header class="package-header">
+              <p class="package-type">Starter</p>
+              <span class="dollar-symbol">$</span
+              ><span class="package-price">399</span>
+              <p class="package-description">
+                per month. That's just $13 per meal!
+              </p>
+            </header>
+            <ul class="package-features">
+              <li class="package-feature">
+                <ion-icon
+                  name="checkmark-outline"
+                  class="pricing-icon"
+                ></ion-icon
+                ><span>1 meal per day</span>
+              </li>
+              <li class="package-feature">
+                <ion-icon
+                  name="checkmark-outline"
+                  class="pricing-icon"
+                ></ion-icon
+                ><span>Order from 11am to 9pm</span>
+              </li>
+              <li class="package-feature">
+                <ion-icon
+                  name="checkmark-outline"
+                  class="pricing-icon"
+                ></ion-icon
+                >Free delivery
+              </li>
+              <li class="package-feature">
+                <ion-icon
+                  name="close-outline"
+                  class="pricing-icon-close"
+                ></ion-icon
+                ><span>Access to new recipes before launch</span>
+              </li>
+            </ul>
+            <div class="package-btn-box">
+              <a href="#" class="btn btn--main package-btn">Choose plan</a>
+            </div>
+          </div>
+          <!-- CARD 2 -->
+          <div class="package-card package-featured">
+            <header class="package-header">
+              <p class="package-type">Complete</p>
+              <span class="dollar-symbol">$</span
+              ><span class="package-price">649</span>
+              <p class="package-description">
+                per month. That's just $11 per meal!
+              </p>
+            </header>
+            <ul class="package-features">
+              <li class="package-feature">
+                <ion-icon
+                  name="checkmark-outline"
+                  class="pricing-icon"
+                ></ion-icon
+                ><span><strong>2 meals </strong>per day</span>
+              </li>
+              <li class="package-feature">
+                <ion-icon
+                  name="checkmark-outline"
+                  class="pricing-icon"
+                ></ion-icon
+                ><span>Order <strong>24/7</strong></span>
+              </li>
+              <li class="package-feature">
+                <ion-icon
+                  name="checkmark-outline"
+                  class="pricing-icon"
+                ></ion-icon
+                ><span>Free delivery</span>
+              </li>
+              <li class="package-feature">
+                <ion-icon
+                  name="checkmark-outline"
+                  class="pricing-icon"
+                ></ion-icon
+                ><span>Access to new recipes before launch</span>
+              </li>
+            </ul>
+            <div class="package-btn-box">
+              <a href="#" class="btn btn--main package-btn">Choose plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <p class="packages-tax-included">
+            Prices include all applicable taxes. Cancel any time. No contracts.
+            No hassle.
+          </p>
+        </div>
+        <div class="plan-features-container container">
+          <div class="plan-features grid grid--4-cols">
+            <div class="plan-feature">
+              <ion-icon class="plan-icon" name="infinite-outline"></ion-icon>
+              <h3 class="plan-feature--heading">Never cook again</h3>
+              <p class="plan-feature--description">
+                Our subscriptions cover 365 days per year, even including major
+                holidays.
+              </p>
+            </div>
+            <div class="plan-feature">
+              <ion-icon class="plan-icon" name="nutrition-outline"></ion-icon>
+              <h3 class="plan-feature--heading">Local and organic</h3>
+              <p class="plan-feature--description">
+                Our cooks only use local, fresh, and organic products to prepare
+                your meals.
+              </p>
+            </div>
+            <div class="plan-feature">
+              <ion-icon class="plan-icon" name="leaf-outline"></ion-icon>
+              <h3 class="plan-feature--heading">No waste</h3>
+              <p class="plan-feature--description">
+                All our partners only use reusable containers to package all
+                your meals.
+              </p>
+            </div>
+            <div class="plan-feature">
+              <ion-icon class="plan-icon" name="pause-outline"></ion-icon>
+              <h3 class="plan-feature--heading">Pause anytime</h3>
+              <p class="plan-feature--description">
+                Going on vacation? Just pause your subscription, and we refund
+                unused days.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
