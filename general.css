@@ -38,7 +38,7 @@ a {
 .container {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 3.2rem;
 }
 
 .grid {
@@ -66,15 +66,30 @@ a {
   margin-right: 1rem !important;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
   font-size: 2rem;
-  padding: 1.6rem 3.2rem;
+  padding: 1.4rem 3.2rem;
   border-radius: 1rem;
+  border: none;
   box-shadow: 0 5px 30px rgba(60, 60, 60, 0.2);
-
+  cursor: pointer;
   transition: all .2s;
+}
+
+.btn--form {
+  background-color: #094218;
+  color: var(--primary-light);
+  align-self: end;
+  font-weight: bold;
+}
+
+.btn--form:hover {
+  color: #094218;
+  background-color: var(--primary-light);
+  align-self: end;
 }
 
 .btn--main:link,
@@ -98,6 +113,11 @@ a {
 .btn--alt:hover,
 .btn--alt:active {
   background-color: rgb(250, 250, 250);
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 .8rem #149536;
 }
 
 .section--heading {

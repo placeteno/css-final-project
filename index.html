@@ -37,10 +37,10 @@
               <a href="#meals" class="nav-item-link">Meals</a>
             </li>
             <li class="nav-item">
-              <a href="#pricing" class="nav-item-link">Pricing</a>
+              <a href="#testimonials" class="nav-item-link">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a href="#faqs" class="nav-item-link">FAQs</a>
+              <a href="#pricing" class="nav-item-link">Pricing</a>
             </li>
           </ul>
         </nav>
@@ -48,10 +48,10 @@
       <div class="header-login">
         <ul class="login-items">
           <li class="login-item">
-            <a href="#" class="login-btn">Sign Up</a>
+            <a href="#cta" class="login-btn">Sign Up</a>
           </li>
           <li class="login-item">
-            <a href="" class="login-btn login-btn-alt">Log in</a>
+            <a href="#" class="login-btn login-btn-alt">Log in</a>
           </li>
         </ul>
       </div>
@@ -301,63 +301,63 @@
         <a href="#" class="all-recipes">Browse more recipes →</a>
       </section>
 
-      <section class="testimonials-section" id="testiomonials">
+      <section class="testimonials-section" id="testimonials">
         <div class="testimonials-container">
           <p class="section--heading">Testimonials</p>
           <h2 class="section--title">
             Once you try our meals, you can't go back!
           </h2>
           <div class="testimonials grid grid--2-cols">
-            <div class="testimonial">
+            <figure class="testimonial">
               <img
                 src="/content/img/customers/ben.jpg"
-                alt=""
+                alt="Portrait Ben Hadley"
                 class="testimonial-photo"
               />
-              <p class="testimonial-text">
+              <blockquote class="testimonial-text">
                 The AI algorithm is crazy good, it chooses the right meals for
                 me every time. It's amazing not to worry about food anymore!
-              </p>
-              <span class="testimonial-author">- Ben Hadley</span>
-            </div>
-            <div class="testimonial">
+              </blockquote>
+              <span class="testimonial-author">&mdash; Ben Hadley</span>
+            </figure>
+            <figure class="testimonial">
               <img
                 src="/content/img/customers/hannah.jpg"
-                alt=""
+                alt="Portrait of Hannah Smith"
                 class="testimonial-photo"
               />
-              <p class="testimonial-text">
+              <blockquote class="testimonial-text">
                 I got Green Chickpea for the whole family, and it frees up so
                 much time! Plus, everything is organic and vegan and without
                 plastic.
-              </p>
-              <span class="testimonial-author">- Hannah Smith</span>
-            </div>
-            <div class="testimonial">
+              </blockquote>
+              <span class="testimonial-author">&mdash; Hannah Smith</span>
+            </figure>
+            <figure class="testimonial">
               <img
                 src="/content/img/customers/steve.jpg"
-                alt=""
+                alt="Portrait of Steve Miller"
                 class="testimonial-photo"
               />
-              <p class="testimonial-text">
+              <blockquote class="testimonial-text">
                 Green Chickpea is a life saver! I just started a company, so
                 there's no time for cooking. I couldn't live without my daily
                 meals now!
-              </p>
-              <span class="testimonial-author">- Steve Miller</span>
-            </div>
-            <div class="testimonial">
+              </blockquote>
+              <span class="testimonial-author">&mdash; Steve Miller</span>
+            </figure>
+            <figure class="testimonial">
               <img
                 src="/content/img/customers/dave.jpg"
-                alt=""
+                alt="Portrait of Dave Bryson"
                 class="testimonial-photo"
               />
-              <p class="testimonial-text">
+              <blockquote class="testimonial-text">
                 Inexpensive, healthy and great-tasting meals, without even
                 having to order manually! It feels truly magical.
-              </p>
-              <span class="testimonial-author">- Dave Bryson</span>
-            </div>
+              </blockquote>
+              <span class="testimonial-author">&mdash; Dave Bryson</span>
+            </figure>
           </div>
         </div>
         <div class="gallery">
@@ -544,10 +544,10 @@
           </div>
         </div>
         <div class="container">
-          <p class="packages-tax-included">
+          <aside class="packages-tax-included">
             Prices include all applicable taxes. Cancel any time. No contracts.
             No hassle.
-          </p>
+          </aside>
         </div>
         <div class="plan-features-container container">
           <div class="plan-features grid grid--4-cols">
@@ -586,9 +586,142 @@
           </div>
         </div>
       </section>
+
+      <section class="cta-section" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="cta-heading">Your first meal on us!</h2>
+              <p class="cta-description">
+                Healthy, tasty, and hassle-free meals are waiting for you. Start
+                your ned healthy plan today. You can cancel or pause your
+                subscription anytime.
+              </p>
+              <form class="cta-form" action="#">
+                <div>
+                  <label for="costumer-name">Full Name</label>
+                  <input
+                    type="text"
+                    id="costumer-name"
+                    placeholder="Joe Smith"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="costumer-email">Email address</label>
+                  <input
+                    type="email"
+                    id="costumer-email"
+                    placeholder="joe@email.com"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="select-where">Where did you hear from us?</label>
+                  <select>
+                    <option value="">Please, choose an option</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="youtube">YouTube video</option>
+                    <option value="social">Social media</option>
+                    <option value="social">Podcast</option>
+                    <option value="social">Other</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--form">Sign up now</button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Woman enjoying food"
+            ></div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="logo"
+              alt="Omnifood logo"
+              src="/content/img/logos/main-logo.png"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by Green Chickpea,
+            Inc. All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              414 Wiconsin Ave., 2nd Floor, Milwaukee, WI 53201
+            </p>
+            <p>
+              <a class="footer-link" href="tel:414-234-0101">414-234-0101</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@greenchickpea.com"
+                >hello@greenchickpea.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Green Chickpea</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Cooking partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Recipe directory </a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
