@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Aloevera";
-  src: url(./content/fonts/aloevera-font/Aloevera.ttf);
+  src: url(/content/fonts/aloevera-font/Aloevera.ttf);
 }
 
 :root {
