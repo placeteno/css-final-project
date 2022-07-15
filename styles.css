@@ -663,7 +663,7 @@ em::after {
 }
 
 .cta-img-box {
-  background: linear-gradient(to right bottom, rgba(179, 216, 190, 0.407), transparent), url(../content/img/eating.jpg);
+  background: linear-gradient(to right bottom, rgba(179, 216, 190, 0.407), transparent), url(./content/img/eating.jpg);
   background-size: cover;
   background-position: center;
 }
